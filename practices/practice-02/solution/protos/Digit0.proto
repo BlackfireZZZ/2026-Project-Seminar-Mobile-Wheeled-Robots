@@ -1,0 +1,96 @@
+#VRML_SIM R2025a utf8
+
+PROTO Digit0 [
+  field SFVec3f translation 0 0 0
+  field SFString name "digit_0"
+]
+{
+  Solid {
+    translation IS translation
+    name IS name
+    children [
+    Transform {
+      translation 0.0 1.2 0.14
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.42 0.44 0.47 roughness 1 metalness 0 }
+          geometry Box { size 1.42 0.16 0.28 }
+        }
+      ]
+    }
+    Transform {
+      translation 0.65 0.6 0.14
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.42 0.44 0.47 roughness 1 metalness 0 }
+          geometry Box { size 0.16 1.2 0.28 }
+        }
+      ]
+    }
+    Transform {
+      translation 0.65 -0.6 0.14
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.42 0.44 0.47 roughness 1 metalness 0 }
+          geometry Box { size 0.16 1.2 0.28 }
+        }
+      ]
+    }
+    Transform {
+      translation 0.0 -1.2 0.14
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.42 0.44 0.47 roughness 1 metalness 0 }
+          geometry Box { size 1.42 0.16 0.28 }
+        }
+      ]
+    }
+    Transform {
+      translation -0.65 -0.6 0.14
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.42 0.44 0.47 roughness 1 metalness 0 }
+          geometry Box { size 0.16 1.2 0.28 }
+        }
+      ]
+    }
+    Transform {
+      translation -0.65 0.6 0.14
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.42 0.44 0.47 roughness 1 metalness 0 }
+          geometry Box { size 0.16 1.2 0.28 }
+        }
+      ]
+    }
+    ]
+    boundingObject Group {
+      children [
+      Transform {
+        translation 0.0 1.2 0.14
+        children [ Box { size 1.42 0.16 0.28 } ]
+      }
+      Transform {
+        translation 0.65 0.6 0.14
+        children [ Box { size 0.16 1.2 0.28 } ]
+      }
+      Transform {
+        translation 0.65 -0.6 0.14
+        children [ Box { size 0.16 1.2 0.28 } ]
+      }
+      Transform {
+        translation 0.0 -1.2 0.14
+        children [ Box { size 1.42 0.16 0.28 } ]
+      }
+      Transform {
+        translation -0.65 -0.6 0.14
+        children [ Box { size 0.16 1.2 0.28 } ]
+      }
+      Transform {
+        translation -0.65 0.6 0.14
+        children [ Box { size 0.16 1.2 0.28 } ]
+      }
+      ]
+    }
+  }
+}
