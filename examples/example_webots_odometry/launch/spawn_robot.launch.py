@@ -67,12 +67,16 @@ def generate_launch_description():
 
     # ROS control spawners
     controller_manager_timeout = ['--controller-manager-timeout', '50']
+
     diffdrive_controller_spawner = Node(
-        package='controller_manager',
-        executable='spawner',
-        output='screen',
-        arguments=['diffdrive_controller'] + controller_manager_timeout,
-    )
+    package='controller_manager',
+    executable='spawner',
+    output='screen',
+    arguments=[
+        'diffdrive_controller',
+        '--controller-ros-args=-p diffdrive_controller:wheel_separation_multiplier:=1.1',
+    ] + controller_manager_timeout,
+)
     joint_state_broadcaster_spawner = Node(
         package='controller_manager',
         executable='spawner',
