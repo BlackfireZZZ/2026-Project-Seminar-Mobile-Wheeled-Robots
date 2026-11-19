@@ -1,0 +1,17 @@
+{
+  "duration": 180.0,
+  "position_threshold": 0.2,
+  "angle_threshold": 0.2,
+  "confirmation_time": 10.0,
+  "localization_mode": "global",
+  "error_x": 0.0,
+  "error_y": 0.0,
+  "error_yaw": 0.0,
+  "min_particles": 500,
+  "max_particles": 10000,
+  "experiment_name": "global_high",
+  "output_dir": "/results",
+  "t0": 3.712,
+  "convergence_time": null,
+  "samples": 1800
+}
