@@ -1,0 +1,17 @@
+{
+  "duration": 180.0,
+  "position_threshold": 0.2,
+  "angle_threshold": 0.2,
+  "confirmation_time": 10.0,
+  "localization_mode": "initial",
+  "error_x": 0.15,
+  "error_y": -0.15,
+  "error_yaw": 0.2,
+  "min_particles": 500,
+  "max_particles": 10000,
+  "experiment_name": "initial_small_high",
+  "output_dir": "/results",
+  "t0": 5.312,
+  "convergence_time": 0.06400000000000006,
+  "samples": 1800
+}
